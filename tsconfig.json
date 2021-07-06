@@ -17,7 +17,13 @@
         "noUnusedParameters": true,
         "removeComments": false
     },
+    "exclude": [
+        "./node_modules",
+        "./public",
+        "./.cache"
+    ],
     "include": [
-        "./src/**/*"
+        "./src/**/*",
+        "./*.ts"
     ]
 }
