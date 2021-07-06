@@ -14,7 +14,9 @@
     "gatsby-plugin-react-helmet": "^4.6.0",
     "gatsby-plugin-sharp": "^3.6.0",
     "gatsby-plugin-styled-components": "^4.8.0",
+    "gatsby-plugin-ts-config": "^1.1.5",
     "gatsby-source-filesystem": "^3.6.0",
+    "gatsby-transformer-remark": "^4.5.0",
     "gatsby-transformer-sharp": "^3.6.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -27,6 +29,7 @@
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
     "@types/react-helmet": "^6.1.1",
+    "@types/source-map-support": "^0.5.3",
     "prettier": "2.2.1",
     "typescript": "^4.3.5"
   },
@@ -41,7 +44,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "build-config": "tsc -p ./tsconfig-gatsby.json && gatsby build",
+    "develop-config": "tsc -p ./tsconfig-gatsby.json && gatsby develop"
   },
   "repository": {
     "type": "git",
